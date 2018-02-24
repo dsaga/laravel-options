@@ -1,17 +1,16 @@
 {
-    "name": "appstract/laravel-options",
+    "name": "dsaga/laravel-options",
     "description": "Global options loaded from the database",
     "keywords": [
         "appstract",
         "laravel-options"
     ],
-    "homepage": "https://github.com/appstract/laravel-options",
+    "homepage": "https://github.com/dsaga/laravel-options",
     "license": "MIT",
     "authors": [
         {
             "name": "Gijs Jorissen",
             "email": "hello@appstract.team",
-            "homepage": "https://appstract.team",
             "role": "Developer"
         }
     ],
