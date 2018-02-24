@@ -44,7 +44,10 @@ class Option extends Model
     public function get($key, $default = null)
     {
         if ($option = self::where('key', $key)->first()) {
-            return $option->value;
+
+            $data = @unserialize($option->value);
+
+            return ($data !== false ? $data : $option->value);
         }
 
         return $default;
@@ -63,6 +66,10 @@ class Option extends Model
 
         foreach ($keys as $key => $value) {
             $option = self::firstOrNew(['key' => $key]);
+
+            if(is_array($value)) {
+               $value = serialize($value);
+            }
 
             $option->value = $value;
 
