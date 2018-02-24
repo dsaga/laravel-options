@@ -1,6 +1,6 @@
 <?php
 
-namespace Appstract\Options;
+namespace Dsaga\Options;
 
 use Illuminate\Support\Facades\Facade;
 

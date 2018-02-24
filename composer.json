@@ -25,12 +25,12 @@
             "src/helpers.php"
         ],
         "psr-4": {
-            "Appstract\\Options\\": "src"
+            "Dsaga\\Options\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Appstract\\Options\\Test\\": "tests"
+            "Dsaga\\Options\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -42,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Appstract\\Options\\OptionsServiceProvider"
+                "Dsaga\\Options\\OptionsServiceProvider"
             ],
             "aliases": {
-                "Option": "Appstract\\Options\\OptionFacade"
+                "Option": "Dsaga\\Options\\OptionFacade"
             }
         }
     }

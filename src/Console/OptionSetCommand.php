@@ -1,9 +1,9 @@
 <?php
 
-namespace Appstract\Options\Console;
+namespace Dsaga\Options\Console;
 
 use Illuminate\Console\Command;
-use Appstract\Options\OptionFacade as Option;
+use Dsaga\Options\OptionFacade as Option;
 
 class OptionSetCommand extends Command
 {

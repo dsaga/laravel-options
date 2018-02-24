@@ -1,6 +1,6 @@
 <?php
 
-namespace Appstract\Options;
+namespace Dsaga\Options;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -19,7 +19,7 @@ class OptionsServiceProvider extends ServiceProvider
             ], 'migrations');
 
             $this->commands([
-                \Appstract\Options\Console\OptionSetCommand::class,
+                \Dsaga\Options\Console\OptionSetCommand::class,
             ]);
         }
     }
@@ -29,6 +29,6 @@ class OptionsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('option', \Appstract\Options\Option::class);
+        $this->app->bind('option', \Dsaga\Options\Option::class);
     }
 }
